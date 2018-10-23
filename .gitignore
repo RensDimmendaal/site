@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+#Nikola
+cache
+.doit.db
+__pycache__
+output
