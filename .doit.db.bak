@@ -63,3 +63,6 @@
 'render_posts:cache/posts/feature-interpretation-breed-classifier.html', (68608, 457)
 'render_sources:output/posts/feature-interpretation-for-pet-breeds-classifier/index.ipynb', (69120, 312)
 'render_pages:output/posts/feature-interpretation-for-pet-breeds-classifier/index.html', (69632, 6331)
+'render_posts:cache/posts/feature-interpretation-for-breed-classifier.html', (76288, 469)
+'render_pages:output/posts/feature-interpretation-for-breed-classifier/index.html', (76800, 6351)
+'render_sources:output/posts/feature-interpretation-for-breed-classifier/index.ipynb', (83456, 320)
