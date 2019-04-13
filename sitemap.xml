@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://rensdimmendaal.com/</loc>
-  <lastmod>2019-04-11T05:52:00Z</lastmod>
+  <lastmod>2019-04-13T05:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://rensdimmendaal.com/2019/</loc>
@@ -28,6 +28,10 @@
  <url>
   <loc>https://rensdimmendaal.com/categories/tag1/</loc>
   <lastmod>2019-04-13T05:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://rensdimmendaal.com/pages/my-new-page/</loc>
+  <lastmod>2019-04-13T05:33:00Z</lastmod>
  </url>
  <url>
   <loc>https://rensdimmendaal.com/posts/another-test-post/</loc>
