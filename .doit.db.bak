@@ -71,3 +71,6 @@
 'render_sources:output/posts/test-post/index.ipynb', (135680, 249)
 'render_pages:output/posts/test-post/index.html', (150528, 5156)
 'render_taxonomies:output/2019/index.html', (161280, 2274)
+'render_pages:output/posts/another-test-post/index.html', (192512, 5195)
+'render_posts:cache/posts/another-test-post.html', (198144, 387)
+'render_sources:output/posts/another-test-post/index.ipynb', (198656, 264)
