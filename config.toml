@@ -2,7 +2,7 @@ baseURL = "https://rensdimmendaal.com/"
 languageCode = "en-us"
 title = "Rens"
 theme = "xmin"
-publishDir = "docs"
+publishDir = "public"
 
 
 [permalinks]
