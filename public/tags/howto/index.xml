@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>howto on Rens</title>
+    <link>https://rensdimmendaal.com/tags/howto/</link>
+    <description>Recent content in howto on Rens</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Apr 2019 10:44:35 +0200</lastBuildDate>
+    
+	<atom:link href="https://rensdimmendaal.com/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HOW TO: plot inline in ipython with iterm2</title>
+      <link>https://rensdimmendaal.com/notes/howto-plot-inline-ipython-iterm2/</link>
+      <pubDate>Mon, 22 Apr 2019 10:44:35 +0200</pubDate>
+      
+      <guid>https://rensdimmendaal.com/notes/howto-plot-inline-ipython-iterm2/</guid>
+      <description>Inline plotting in the terminal is useful if you want to do some quick analysis without launching a full jupyter notebook. I&amp;rsquo;m going to show you how to get inline plots in ipython console with iterm2.
+First, install this python package called imgcat:
+$ pip install imgcat  Second, fire up an ipython console and run:
+import matplotlib matplotlib.use(&amp;quot;module://imgcat&amp;quot;) import matplotlib.pyplot as plt fig, ax = plt.subplots() ax = plt.plot([1,2]) fig.</description>
+    </item>
+    
+    <item>
+      <title>HOW TO: downsample with pandas</title>
+      <link>https://rensdimmendaal.com/notes/howto-downsample-with-pandas/</link>
+      <pubDate>Mon, 22 Apr 2019 10:37:35 +0200</pubDate>
+      
+      <guid>https://rensdimmendaal.com/notes/howto-downsample-with-pandas/</guid>
+      <description>If you want to create a classifier, but you have an unequal number of observations for each class, then you have to be extra careful with how you estimate your model. If you have a highly imbalanced dataset and optimize for accuracy, then a model might simply predict the majority class in all cases.
+A common way of dealling with this issue is downsampling, also known as undersampling. Downsampling means removing observations from the majority class(es) such that you have an equal number of observations for each class.</description>
+    </item>
+    
+  </channel>
+</rss>

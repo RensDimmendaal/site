@@ -109,3 +109,6 @@ cache
 .doit.db
 __pycache__
 output
+
+# other
+.DS_Store

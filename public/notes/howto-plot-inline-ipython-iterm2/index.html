@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOW TO: plot inline in ipython with iterm2 | Rens</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/notes/">Notes</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/links/">Links</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">HOW TO: plot inline in ipython with iterm2</span></h1>
+
+<h2 class="date">2019/04/22</h2>
+</div>
+
+<main>
+<p>Inline plotting in the terminal is useful if you want to do some quick analysis without launching a full jupyter notebook.
+I&rsquo;m going to show you how to get inline plots in ipython console with iterm2.</p>
+
+<p>First, install this python package called <a href="https://github.com/wookayin/python-imgcat">imgcat</a>:</p>
+
+<pre><code class="language-bash">$ pip install imgcat
+</code></pre>
+
+<p>Second, fire up an ipython console and run:</p>
+
+<pre><code class="language-python">import matplotlib
+matplotlib.use(&quot;module://imgcat&quot;)
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax = plt.plot([1,2])
+fig.show()
+</code></pre>
+
+<p>You should see the following:</p>
+
+<p><img src="/img/ipython-plot.png" alt="example plot in ipython"
+    title="Example Plot in Ipython" width="50%" /></p>
+
+<p>There, now I&rsquo;ve shown you how to get inline plots in the ipython console in iterm2.
+You should go out and do your data sciency stuff in the terminal.</p>
+
+<p><strong>Bonus,</strong> be friendly to your future self and add the first steps to your ipython default profile:</p>
+
+<pre><code class="language-bash">$ cd ~/.ipython/profile_default/startup
+$ touch my_custom_startup.ipy #note the .ipy extension
+</code></pre>
+
+<p>My startup file looks like this:</p>
+
+<pre><code class="language-python">%load_ext autoreload
+%autoreload 2
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+import matplotlib
+matplotlib.use(&quot;module://imgcat&quot;)
+</code></pre>
+
+</main>
+
+  <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  Website by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://yihui.name">Yihui Xie</a>. Content by me. | <a href="https://github.com/rensdimmendaal">Github</a> | <a href="https://twitter.com/r_dimm">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+

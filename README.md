@@ -1,2 +1,0 @@
-# site
-my nikola site
