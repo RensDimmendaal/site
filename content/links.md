@@ -13,3 +13,7 @@ draft: false
 ## Other
 * [On writing a programming blog](https://emptysqua.re/blog/write-an-excellent-programming-blog/)
 * [Markdown cheat sheet](https://commonmark.org/help/)
+
+
+## GoDataDriven Blog posts
+* [My post on data science podcast recommendations](https://blog.godatadriven.com/data-science-podcast-recommendations)
