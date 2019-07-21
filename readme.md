@@ -11,5 +11,5 @@ hugo server --buildDrafts
 
 
 ```bash
-./comimit-gh-pages-files.sh
+./commit-gh-pages-files.sh
 ```
