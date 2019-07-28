@@ -114,3 +114,5 @@ output
 
 # other
 .DS_Store
+public/index.xml
+public/links/index.html

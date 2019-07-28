@@ -14,5 +14,6 @@ draft: false
 * [Imgcat](https://github.com/wookayin/python-imgcat)
 
 ## Writing
-* [On writing a programming blog](https://emptysqua.re/blog/write-an-excellent-programming-blog/)
+* [5 great formats for (technical) blog posts](https://emptysqua.re/blog/write-an-excellent-programming-blog/)
+* [The story circle, a great framework for storytelling](https://channel101.fandom.com/wiki/Story_Structure_101:_Super_Basic_Shit)
 * [Markdown cheat sheet](https://commonmark.org/help/)
