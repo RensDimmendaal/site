@@ -3,6 +3,7 @@ title: Links
 draft: false
 ---
 ## Data Science
+* [Great explanation of transformers](http://www.peterbloem.nl/blog/transformers)
 * [Kalman Filter Book](https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python)
 * [Cool practical example of PCA applied to the streets of Manhattan](https://www.youtube.com/watch?v=2Tt0i823-ec&t=19m24s)
 * [Primer on A/B Testing](https://hookedondata.org/guidelines-for-ab-testing/)
