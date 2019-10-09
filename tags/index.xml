@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Rens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Apr 2019 10:44:35 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 17:20:36 +0200</lastBuildDate>
     
 	<atom:link href="https://rensdimmendaal.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>howto, conda</title>
+      <link>https://rensdimmendaal.com/tags/howto-conda/</link>
+      <pubDate>Wed, 09 Oct 2019 17:20:36 +0200</pubDate>
+      
+      <guid>https://rensdimmendaal.com/tags/howto-conda/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>howto</title>
@@ -26,15 +35,6 @@
       <pubDate>Mon, 22 Apr 2019 10:37:35 +0200</pubDate>
       
       <guid>https://rensdimmendaal.com/tags/howto-pandas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>howto, conda</title>
-      <link>https://rensdimmendaal.com/tags/howto-conda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://rensdimmendaal.com/tags/howto-conda/</guid>
       <description></description>
     </item>
     
