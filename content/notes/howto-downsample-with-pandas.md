@@ -1,7 +1,7 @@
 ---
 title: "HOW TO: downsample with pandas"
 date: 2019-04-22T10:37:35+02:00
-tags: howto
+tags: howto, pandas
 draft: false
 ---
 
