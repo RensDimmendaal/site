@@ -34,12 +34,23 @@ A common way of dealling with this issue is downsampling, also known as undersam
     </item>
     
     <item>
+      <title>HOW TO: Automate creation of conda environments</title>
+      <link>https://rensdimmendaal.com/notes/howto-manage-conda-environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rensdimmendaal.com/notes/howto-manage-conda-environments/</guid>
+      <description>Do you: * Always have to google how to create a new environment? * Forget to activate the right environment? * Forget the name of your conda environments?
+Then these aliases for your .bashrc or .zshrc file might help.
+function mkproj() { mkdir $1 cd $1 conda create -n $1 -y python=3.7 conda deactivate conda activate $1 }  This gives you the option to run mkproj projectname and it will make a new directory and conda environment of name projectname.</description>
+    </item>
+    
+    <item>
       <title>Links</title>
       <link>https://rensdimmendaal.com/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://rensdimmendaal.com/links/</guid>
-      <description> Data Science  Great explanation of transformers Kalman Filter Book Cool practical example of PCA applied to the streets of Manhattan Primer on A/B Testing My post on data science podcast recommendations  Programming  Pro Git book Black formatting in jupyter  Mac  Mac setup guide Imgcat  Writing  5 great formats for (technical) blog posts The story circle, a great framework for storytelling  </description>
+      <description> Data Science (related) Books  Data Science Handbook Jake vd Plas Kalman Filter Book Pro Git book  Blog Posts  Great explanation of transformers Primer on A/B Testing How to get black formatting in jupyter My post on data science podcast recommendations  Mac  Mac setup guide Show images in iterm2  Writing  5 great formats for (technical) blog posts The story circle, a great framework for storytelling  </description>
     </item>
     
   </channel>

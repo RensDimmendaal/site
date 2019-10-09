@@ -33,5 +33,16 @@ import matplotlib matplotlib.use(&amp;quot;module://imgcat&amp;quot;) import mat
 A common way of dealling with this issue is downsampling, also known as undersampling. Downsampling means removing observations from the majority class(es) such that you have an equal number of observations for each class.</description>
     </item>
     
+    <item>
+      <title>HOW TO: Automate creation of conda environments</title>
+      <link>https://rensdimmendaal.com/notes/howto-manage-conda-environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rensdimmendaal.com/notes/howto-manage-conda-environments/</guid>
+      <description>Do you: * Always have to google how to create a new environment? * Forget to activate the right environment? * Forget the name of your conda environments?
+Then these aliases for your .bashrc or .zshrc file might help.
+function mkproj() { mkdir $1 cd $1 conda create -n $1 -y python=3.7 conda deactivate conda activate $1 }  This gives you the option to run mkproj projectname and it will make a new directory and conda environment of name projectname.</description>
+    </item>
+    
   </channel>
 </rss>

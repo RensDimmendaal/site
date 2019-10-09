@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>howto, pandas on Rens</title>
+    <link>https://rensdimmendaal.com/tags/howto-pandas/</link>
+    <description>Recent content in howto, pandas on Rens</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Apr 2019 10:37:35 +0200</lastBuildDate>
+    
+	<atom:link href="https://rensdimmendaal.com/tags/howto-pandas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HOW TO: downsample with pandas</title>
+      <link>https://rensdimmendaal.com/notes/howto-downsample-with-pandas/</link>
+      <pubDate>Mon, 22 Apr 2019 10:37:35 +0200</pubDate>
+      
+      <guid>https://rensdimmendaal.com/notes/howto-downsample-with-pandas/</guid>
+      <description>If you want to create a classifier, but you have an unequal number of observations for each class, then you have to be extra careful with how you estimate your model. If you have a highly imbalanced dataset and optimize for accuracy, then a model might simply predict the majority class in all cases.
+A common way of dealling with this issue is downsampling, also known as undersampling. Downsampling means removing observations from the majority class(es) such that you have an equal number of observations for each class.</description>
+    </item>
+    
+  </channel>
+</rss>

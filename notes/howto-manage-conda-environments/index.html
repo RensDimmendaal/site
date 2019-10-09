@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOW TO: Automate creation of conda environments | Rens</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/notes/">Notes</a></li>
+      
+      <li><a href="/tags/">Tags</a></li>
+      
+      <li><a href="/links/">Links</a></li>
+      
+      <li><a href="/index.xml">Subscribe</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">HOW TO: Automate creation of conda environments</span></h1>
+
+
+</div>
+
+<main>
+<p>Do you:
+* Always have to google how to create a new environment?
+* Forget to activate the right environment?
+* Forget the name of your conda  environments?</p>
+
+<p>Then these aliases for your <code>.bashrc</code> or <code>.zshrc</code> file might help.</p>
+
+<pre><code>function mkproj() {
+    mkdir $1
+    cd $1
+    conda create -n $1 -y python=3.7
+    conda deactivate
+    conda activate $1
+}
+</code></pre>
+
+<p>This gives you the option to run <code>mkproj projectname</code> and  it will make a new directory and conda environment of name <code>projectname</code>.</p>
+
+<p>If you add:</p>
+
+<pre><code class="language-bash">function ca() {
+    dir=$(echo $PWD | rev | cut -d/ -f1 | rev)
+    conda deactivate
+    conda activate ${dir}
+}
+</code></pre>
+
+<p>Then you can easily activate the relevant conda  environment if you are in the  project&rsquo;s home directory.
+Finally if you often forget to activate the conda environment before going into jupyter lab then these aliases might help:</p>
+
+<pre><code class="language-bash"># Python aliases
+alias jn=&quot;ca  &amp;&amp; jupyter notebook&quot;
+alias jl=&quot;ca &amp;&amp; jupyter lab&quot;
+alias ip=&quot;ca &amp;&amp; ipython&quot;
+</code></pre>
+
+</main>
+
+  <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  Website by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://yihui.name">Yihui Xie</a>. Content by me. | <a href="https://github.com/rensdimmendaal">Github</a> | <a href="https://twitter.com/r_dimm">Twitter</a>
+  
+  </footer>
+  </body>
+</html>
+
