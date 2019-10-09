@@ -1,11 +1,12 @@
 ---
 title: "HOW TO: Automate creation of conda environments"
-date: 2019-10-8
+date: 2019-10-09T17:20:36+02:00
 tags: howto, conda
 draft: false
 ---
 
 Do you:
+
 * Always have to google how to create a new environment?
 * Forget to activate the right environment?
 * Forget the name of your conda  environments?
