@@ -19,7 +19,7 @@
       <guid>https://rensdimmendaal.com/notes/howto-manage-conda-environments/</guid>
       <description>Do you:
  Always have to google how to create a new environment? Forget to activate the right environment? Forget the name of your conda environments?  Then these aliases for your .bashrc or .zshrc file might help.
-function mkproj() { mkdir $1 cd $1 conda create -n $1 -y python=3.7 conda deactivate conda activate $1 }  This gives you the option to run mkproj projectname and it will make a new directory and conda environment of name projectname.</description>
+function mkconda() { dir=$(echo $PWD | rev | cut -d/ -f1 | rev) conda create -n $1 -y python=3.7 conda deactivate conda activate $1 }  This gives you the option to run mkconda and it will create a new conda environment with the same name as the current directory.</description>
     </item>
     
     <item>

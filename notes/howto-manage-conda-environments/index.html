@@ -44,16 +44,15 @@
 
 <p>Then these aliases for your <code>.bashrc</code> or <code>.zshrc</code> file might help.</p>
 
-<pre><code>function mkproj() {
-    mkdir $1
-    cd $1
+<pre><code>function mkconda() {
+    dir=$(echo $PWD | rev | cut -d/ -f1 | rev)
     conda create -n $1 -y python=3.7
     conda deactivate
     conda activate $1
 }
 </code></pre>
 
-<p>This gives you the option to run <code>mkproj projectname</code> and  it will make a new directory and conda environment of name <code>projectname</code>.</p>
+<p>This gives you the option to run <code>mkconda</code> and it will create a new conda environment with the same name as the current directory.</p>
 
 <p>If you add:</p>
 
@@ -64,11 +63,11 @@
 }
 </code></pre>
 
-<p>Then you can easily activate the relevant conda  environment if you are in the  project&rsquo;s home directory.
-Finally if you often forget to activate the conda environment before going into jupyter lab then these aliases might help:</p>
+<p>Then you can use <code>ca</code> from your project root to easily activate the relevant conda  environment.
+As a bonus if you often forget to activate the right environment then you can use aliases:</p>
 
 <pre><code class="language-bash"># Python aliases
-alias jn=&quot;ca  &amp;&amp; jupyter notebook&quot;
+alias jn=&quot;ca &amp;&amp; jupyter notebook&quot;
 alias jl=&quot;ca &amp;&amp; jupyter lab&quot;
 alias ip=&quot;ca &amp;&amp; ipython&quot;
 </code></pre>
